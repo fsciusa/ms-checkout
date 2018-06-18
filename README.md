@@ -11,8 +11,9 @@ __Possible calls:__
 	- http://localhost:8093/orders/
 
 2. GET A specific product
-	- http://localhost:8093/orders/10001
-	- http://localhost:8093/orders/10002
+	- http://localhost:8093/orders/30001
+	- http://localhost:8093/orders/30002
+	- http://localhost:8093/orders/30003
 
 3. POST a product (create)
 	- http://localhost:8093/orders/
