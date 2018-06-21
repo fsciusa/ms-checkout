@@ -1,5 +1,7 @@
 package microservices.order;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -9,11 +11,19 @@ import java.util.Optional;
 @RestController
 public class ProductOrderResource {
 
+    private static Logger logger = LogManager.getLogger(ProductOrderResource.class);
+
     @Autowired
     private ProductOrderReposity productOrderReposity;
 
     @GetMapping("/orders")
     public List<Purchase> getAll() {
+        return productOrderReposity.findAll();
+    }
+
+    @GetMapping("/orders/cid/{cid}/caller/{caller}")
+    public List<Purchase> getAll(@PathVariable int cid, @PathVariable String caller) {
+        logger.info("CALL\t{}\t{}\tOrders\t/orders", cid, caller);
         return productOrderReposity.findAll();
     }
 
