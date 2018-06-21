@@ -1,8 +1,8 @@
-package microservices.order;
+package microservices.checkout;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface ProductOrderReposity extends JpaRepository<Purchase, Integer> {
+public interface CheckoutRepository extends JpaRepository<Checkout, Integer> {
 }

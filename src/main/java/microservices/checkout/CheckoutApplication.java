@@ -1,12 +1,12 @@
-package microservices.order;
+package microservices.checkout;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ProductOrderApplication {
+public class CheckoutApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProductOrderApplication.class, args);
+		SpringApplication.run(CheckoutApplication.class, args);
 	}
 }

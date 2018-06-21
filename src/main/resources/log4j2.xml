@@ -10,7 +10,7 @@
     </Appenders>
 
     <Loggers>
-        <Logger name="microservices.order" level="info" additivity="false">
+        <Logger name="microservices.checkout" level="info" additivity="false">
             <AppenderRef ref="Console" />
             <AppenderRef ref="File" />
         </Logger>
