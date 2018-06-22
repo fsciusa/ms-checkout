@@ -5,13 +5,12 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class Checkout {
+public class Cart {
 
     @Id
     @GeneratedValue
     private int id;
 
-    private int cartId;
     private int productId;
     private double price;
 
@@ -21,14 +20,6 @@ public class Checkout {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public int getCartId() {
-        return cartId;
-    }
-
-    public void setCartId(int cartId) {
-        this.cartId = cartId;
     }
 
     public int getProductId() {
@@ -49,7 +40,7 @@ public class Checkout {
 
     @Override
     public String toString() {
-        return String.format("Checkout [Id=%s]", getId());
+        return String.format("Cart [Id=%s]", getId());
     }
 
 }

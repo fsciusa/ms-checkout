@@ -4,7 +4,7 @@
         <Console name="Console" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{yyMMddHHmmss}\t%p\t%c\t%msg\t%n" />
         </Console>
-        <File name="File" fileName="../log/ms-order.log">
+        <File name="File" fileName="../log/ms-checkout.log">
             <PatternLayout pattern="%d{yyMMddHHmmss}\t%p\t%c\t%msg\t%n" />
         </File>
     </Appenders>
